@@ -1,0 +1,6 @@
+type: files
+multiple: true
+query: page.images.template('image')
+layout: cards
+uploads:
+  template: image

@@ -1,0 +1,14 @@
+blueprint: section
+
+type: pages
+label: Projets
+parent: kirby.page("scenarios")
+info: "{{ page.published }}"
+template: scenario-item
+empty: pas de scenario…
+size: small
+limit: 500
+layout: cards
+image:
+  cover: true
+  query: page.images.sort('sort').first

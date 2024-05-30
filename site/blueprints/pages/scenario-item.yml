@@ -1,0 +1,39 @@
+blueprint: page
+
+title: Scenario Item
+
+options:
+  changeSlug: true
+  delete: true
+  changeTitle: true
+  sort: true
+  changeStatus: true
+  duplicate: true
+  changeTemplate: false
+
+columns:
+  - width: 2/3
+    fields:
+
+
+      teamText:
+        label: Scenario Item Description
+        type: writer
+        marks:
+          - italic
+          - link
+        nodes:
+          - paragraph
+          - heading
+        headings:
+          - 2
+
+      images:
+        type: files
+        required: true
+        label: Image.s
+        extends: fields/images
+        image:
+          cover: true
+          back: white
+

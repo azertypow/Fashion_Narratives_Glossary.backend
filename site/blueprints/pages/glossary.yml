@@ -1,0 +1,38 @@
+blueprint: page
+
+title: Glossary
+
+icon: tag
+
+options:
+  changeSlug: false
+  delete: false
+  changeTitle: true
+  sort: false
+  changeStatus: false
+  duplicate: false
+  move: false
+
+columns:
+  - width: 1/3
+    sections:
+      drafts:
+        extends: sections/glossary-item
+        type: pages
+        label: Brouillon
+        status: draft
+
+      unlisted:
+        extends: sections/glossary-item
+        type: pages
+        label: En attente de relecture
+        status: unlisted
+
+  - width: 2/3
+    sections:
+      listed:
+        extends: sections/glossary-item
+        type: pages
+        label: Publié
+        status: listed
+        search: true

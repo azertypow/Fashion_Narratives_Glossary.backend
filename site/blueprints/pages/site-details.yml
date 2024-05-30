@@ -1,0 +1,48 @@
+blueprint: page
+
+title: Site Details
+
+icon: info
+
+options:
+  changeSlug: false
+  delete: false
+  changeTitle: true
+  sort: false
+  changeStatus: false
+  duplicate: false
+  move: false
+
+columns:
+  - width: 2/3
+    fields:
+      introText:
+        label: Intro Text
+        type: writer
+        marks:
+          - italic
+          - link
+        nodes:
+          - paragraph
+      teamText:
+        label: Team Text
+        type: writer
+        marks:
+          - italic
+          - link
+        nodes:
+          - paragraph
+          - heading
+        headings:
+          - 2
+      teamAbout:
+        label: About Text
+        type: writer
+        marks:
+          - italic
+          - link
+        nodes:
+          - paragraph
+          - heading
+        headings:
+          - 2

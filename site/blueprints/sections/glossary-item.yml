@@ -1,0 +1,13 @@
+blueprint: section
+
+type: pages
+label: Projets
+parent: kirby.page("glossary")
+info: "{{ page.published }}"
+template: glossary-item
+empty: pas d'objets…
+sortBy: date desc
+size: tiny
+limit: 500
+layout: list
+image: false

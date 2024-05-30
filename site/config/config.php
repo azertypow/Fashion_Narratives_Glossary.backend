@@ -12,6 +12,16 @@ use Kirby\Cms\Page;
 
 return [
     'debug' => true,
+
+    // CORS middleware
+    'hooks' => [
+        'route:before' => function () {
+            header('Access-Control-Allow-Origin: *');
+            header('Access-Control-Allow-Methods: GET');
+//            header('Access-Control-Allow-Headers: Content-Type, Authorization');
+        }
+    ],
+
     'routes' => [
         [
             'pattern' => '/',
